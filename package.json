@@ -11,7 +11,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "@schamane/graphql-middleware": "^3.3.0",
+    "@schamane/graphql-middleware": "^3.3.1",
     "apollo-server-express": "^3.3.0",
     "lodash": "^4.17.21",
     "passport": "^0.4.1",
@@ -20,7 +20,7 @@
   "scripts": {
     "build:check": "tsc",
     "build": "npm run clean && microbundle build --compress --target node --raw --format modern,cjs",
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "lint": "eslint --ext .ts src/",
     "lint:fix": "eslint --fix --ext .ts src/",
     "clean:build": "rimraf dist",
@@ -30,10 +30,10 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.15.4",
     "@types/lodash": "^4.14.172",
-    "@types/node": "^16.7.10",
+    "@types/node": "^16.7.13",
     "@types/passport": "^1.0.7",
-    "@typescript-eslint/eslint-plugin": "^4.30.0",
-    "@typescript-eslint/parser": "^4.30.0",
+    "@typescript-eslint/eslint-plugin": "^4.31.0",
+    "@typescript-eslint/parser": "^4.31.0",
     "eslint": "7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -50,7 +50,7 @@
   },
   "peerDependencies": {
     "apollo-server-express": "^3.3.0",
-    "@schamane/graphql-middleware": "^3.3.0"
+    "@schamane/graphql-middleware": "^3.3.1"
   },
   "keywords": [
     "components",
